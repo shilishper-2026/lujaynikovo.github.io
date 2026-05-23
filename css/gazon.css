@@ -476,6 +476,7 @@ width: 50%;
 .footer-col ul {
     list-style: none;
     padding: 0;
+    padding-left: 15%;
 }
 
 .footer-col ul li {
