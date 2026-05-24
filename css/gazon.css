@@ -471,6 +471,7 @@ width: 50%;
 .footer-col h4 {
     margin-bottom: 0.1%;
     color: #f19e0f; /* Цвет заголовков */
+    margin-left: 14%;
 }
 
 .footer-col ul {
