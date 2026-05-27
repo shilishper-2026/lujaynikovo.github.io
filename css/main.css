@@ -264,6 +264,11 @@ ul .logoul{
 header{
   margin: 0;
   padding: 0;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5)),
+   url('https://shilishper-2026.github.io/lujaynikovo.github.io/img/20240605092025_IMG_3742 1.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   border-radius: 5%;
   text-align: center;
   font-family: sans-serif;
@@ -272,7 +277,7 @@ header{
   width: 100%;
 }
 
-header h2, header h3{
+header h2, header h3, header h1{
   z-index: 2;
 }
 
@@ -282,13 +287,15 @@ header img{
 }
 
 .bg{
+
   width: 100%;
-  height: 2300%;
+  height: 100%;
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
   z-index: 1;
+  object-fit: cover;
 }
 
 header h1{
