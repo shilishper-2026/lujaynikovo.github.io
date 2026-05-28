@@ -73,6 +73,22 @@
     z-index: 12;
   }
 
+  .nado{
+    font-size: 3vw;
+  }
+
+  .dropdown-content{
+    width: 200%;
+    font-size: 4vw;
+  }
+
+  .menu, .phone, .logoul, .contacts,.contacts2,.work1,.footer-col,.footer-logo,.footer-container,.footer-logo,header,#zagolovok1,main,.author,#zagolovok2,#zagolovok3,.text{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    font-size: 4vw;
+  }
+
   .menu {
     position: absolute;
     top:100%;
@@ -126,11 +142,11 @@
   }
 }
 
-.menu, .dropdown-content, .phone, .logoul, .nado, .contacts,.contacts2,.work1,.footer-col,.footer-logo,.footer-container,.footer-logo,header,#zagolovok1,main,.author,#zagolovok2,#zagolovok3,.text{
+.menu, .phone, .logoul, .contacts,.contacts2,.work1,.footer-col,.footer-logo,.footer-container,.footer-logo,header,#zagolovok1,main,.author,#zagolovok2,#zagolovok3,.text{
     list-style-type: none;
     margin: 0;
     padding: 0;
-    font-size: 1.5vw;
+    font-size: 4vw;
 }
 
 .menu > li {
@@ -151,11 +167,16 @@
     width: 100%;
     border-radius: 5px;
     z-index: 13;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    font-size: 1.5vw;
+    font-family: sans-serif;
 }
 
 .dropdown-content li a {
     color: black;
-    padding: 1% 16px;
+    padding: 1% 0;
     text-decoration: none;
     display: block;
 }
@@ -216,6 +237,9 @@ body{
     width: 50%;
     text-align: center;
     font-size: 1.5vw;
+    list-style-type: none;
+    margin: 0;
+    font-family: sans-serif;
 }
 
 .nado{
@@ -269,7 +293,7 @@ header{
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  border-radius: 5%;
+  border-radius: 0 0 5% 5%;
   text-align: center;
   font-family: sans-serif;
   left: 0;
