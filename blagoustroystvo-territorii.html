@@ -18,7 +18,7 @@
       </label>
       <ul class="menu">
     <ul class="logoul">
-    <li><div class="logo1"><img src="img\Group 30.png" alt="Логотип "></div></li>
+    <li><div class="logo1"><img src="img/logo.png" alt="Логотип "></div></li>
     </ul>
     <ul class="nado">
     <li><a href="index.html">Главная</a></li>
@@ -46,11 +46,11 @@
     </li>
     </ul>
         <ul class="phone">
-    <li><div class="tg"><a href="https://t.me/xderevo"><img src="img\i 8.svg" alt="Telegram" title="Написать в Telegram"></a></div></li>
-    <li><div class="tg"><a href="https://wa.me/79116400900"><img src="img\i 15.png" alt="WhatsApp" title="Написать в WhatsApp"></a></div></li>
-    <li><div class="tg"><a href=""><img src="img\i 16.png" alt="VK Сообщество" title="VK Сообщество"></a></div></li>
+    <li><div class="tg"><a href="https://t.me/xderevo"><img src="img\logo_Telegram.svg" alt="Telegram" title="Написать в Telegram"></a></div></li>
+    <li><div class="tg"><a href="https://wa.me/79116400900"><img src="img\logo_WhatsApp.png" alt="WhatsApp" title="Написать в WhatsApp"></a></div></li>
+    <li><div class="tg"><a href=""><img src="img\logo_VK.png" alt="VK Сообщество" title="VK Сообщество"></a></div></li>
     <li><div class="tg"><a href="https://vk.com/away.php?to=https%3A%2F%2Fmax.ru%2Fu%2Ff9LHodD0cOLaLCBwVOrEhsqAn9IQgGBll5yeVk2AKQLl83vnsEdvJbJDutA&utf=1"><img src="img\Group 12.png" alt="Max" title="Написать в Max"></a></div></li>
-    <li><div class="tg"><a href="tel:+79116400900"><img src="img\image 2.png" alt="Телефон" title="Позвонить"></a></div></li>
+    <li><div class="tg"><a href="tel:+79116400900"><img src="img\phone_01.png" alt="Телефон" title="Позвонить"></a></div></li>
         </ul>
       </ul>
     </nav>
@@ -158,28 +158,37 @@
   </div>
    <div class="clear"></div>
   <div id="zagolovok1"><h2>Как мы работаем:</h2></div>
-  <div class="work1">
-    <img src="img\Group 16.png" alt="Логотип Telegram">
-    <h5>1. Вы звоните нам</h5>
-    <h6>Свяжитесь по телефону: +7 911 640 09 00. Сообщите нам о ваших задачах и укажите, где территориально находится участок, с которым мы будем работать.</h6>
+  <div class="gallery-container">
+  <!-- Радиокнопки для управления (скрыты через CSS) -->
+  <input type="radio" name="slider_01" id="slide1_01" checked>
+  <input type="radio" name="slider_01" id="slide2_01">
+  <input type="radio" name="slider_01" id="slide3_01">
+
+  <!-- Слайды -->
+  <div class="slides">
+    <div class="slide_01" id="content1_01">
+      <img src="img\phone.png" alt="Фото 1">
+      <div class="text"><h5>Вы пишите или звоните мне и объясняете какую работу мы должны выполнить.</h5></div>
+    </div>
+    <div class="slide_01" id="content2_01">
+      <img src="img\message.png" alt="Фото 2">
+      <div class="text" id="textmobile_01"><h5>Также вы можете прислать фотографии того, что мы должны сделать, или я могу БЕСПЛАТНО приехать на ваш участок ради осмотра</h5></div>
+    </div>
+    <div class="slide_01" id="content3_01">
+      <img src="img\auto.png" alt="Фото 2">
+      <div class="text"><h5>Мы определяем цену, выбираем день когда мы будем работать, делаем нужные вам документы, выполняем работу и уезжаем.</h5></div>
+    </div>
   </div>
-  <div class="work1">
-    <img src="img\Group 15.png" alt="Логотип Telegram">
-    <h5>2. Или пишите</h5>
-    <h6>Можно отправить фотографии и адрес объекта через мессенджер Telegram по номеру +7 911 640 09 00</h6>
-  </div><div class="work1">
-    <img src="img\Group 18.png" alt="Логотип Telegram">
-    <h5>3. Мы выезжаем на осмотр</h5>
-    <h6>Мы можем БЕСПЛАТНО выехать на место для осмотра или провести оценку по фотографиям. После этого мы свяжемся с вами, чтобы сообщить стоимость работ.</h6>
-  </div><div class="work1">
-    <img src="img\Group 19.png" alt="Логотип Telegram">
-    <h5>4. Дата и необходимые документы</h5>
-    <h6>Обсуждаем удобные даты для работы (или сразу приступаем к работе), а также порядок оплаты. При необходимости оформляем нужные вам документы: гарантийное письмо или документы для отчётности при безналичной оплате.</h6>
-  </div><div class="work1">
-    <img src="img\Group 17.png" alt="Логотип Telegram">
-    <h5>5.Мы выполняем все работы в согласованные сроки</h5>
-    <h6> Оплата производится в соответствии с нашими договорённостями.</h6>
-  </div>
+
+  <!-- Стрелки (label управляют радиокнопками) -->
+ <label for="slide3_01" class="arrow slideend" id="arrow0_01"><img src="img\arrow_left.png" alt="Кнопка"></label>
+ <label for="slide2_01" class="arrow next2" id="arrow1_01"><img src="img\arrow_right.png" alt="Кнопка"></label>
+ <label for="slide1_01" class="arrow prev1" id="arrow2_01"><img src="img\arrow_left.png" alt="Кнопка"></label>
+ <label for="slide3_01" class="arrow next3" id="arrow3_01"><img src="img\arrow_right.png" alt="Кнопка"></label>
+ <label for="slide2_01" class="arrow prev2" id="arrow4_01"><img src="img\arrow_left.png" alt="Кнопка"></label>
+ <label for="slide1_01" class="arrow slidestart" id="arrow5_01"><img src="img\arrow_right.png" alt="Кнопка"></label>
+</div>
+</div>
   <div class="clear"></div>
   <div id="#works">
   <div id="zagolovok3"><h2>Выполненные работы:</h2></div>
@@ -207,28 +216,28 @@
   </div>
 
   <!-- Стрелки (label управляют радиокнопками) -->
- <label for="slide3" class="arrow slideend" id="arrow0"><img src="img\Group 20.png" alt="Кнопка"></label>
- <label for="slide2" class="arrow next2" id="arrow1"><img src="img\Group 21.png" alt="Кнопка"></label>
- <label for="slide1" class="arrow prev1" id="arrow2"><img src="img\Group 20.png" alt="Кнопка"></label>
- <label for="slide3" class="arrow next3" id="arrow3"><img src="img\Group 21.png" alt="Кнопка"></label>
- <label for="slide2" class="arrow prev2" id="arrow4"><img src="img\Group 20.png" alt="Кнопка"></label>
- <label for="slide1" class="arrow slidestart" id="arrow5"><img src="img\Group 21.png" alt="Кнопка"></label>
+ <label for="slide3" class="arrow slideend" id="arrow0"><img src="img\arrow_left.png" alt="Кнопка"></label>
+ <label for="slide2" class="arrow next2" id="arrow1"><img src="img\arrow_right.png" alt="Кнопка"></label>
+ <label for="slide1" class="arrow prev1" id="arrow2"><img src="img\arrow_left.png" alt="Кнопка"></label>
+ <label for="slide3" class="arrow next3" id="arrow3"><img src="img\arrow_right.png" alt="Кнопка"></label>
+ <label for="slide2" class="arrow prev2" id="arrow4"><img src="img\arrow_left.png" alt="Кнопка"></label>
+ <label for="slide1" class="arrow slidestart" id="arrow5"><img src="img\arrow_right.png" alt="Кнопка"></label>
 </div>
 </div>
   <div id="#telephone">
     <div id="zagolovok2"><h2>Контакты:</h2></div>
   <div class="contacts">
-    <a href="https://t.me/xderevo"><img src="img\i 8.svg" alt="Логотип Telegram"></a>
+    <a href="https://t.me/xderevo"><img src="img\logo_Telegram.svg" alt="Логотип Telegram"></a>
     <h5>Telegram</h5>
     <h6>+79116400900</h6>
   </div>
   <div class="contacts">
-        <a href="https://wa.me/79116400900"><img src="img\i 15.png" alt="WhatsApp" title="Написать в WhatsApp"></a>
+        <a href="https://wa.me/79116400900"><img src="img\logo_WhatsApp.png" alt="WhatsApp" title="Написать в WhatsApp"></a>
     <h5>WhatsApp</h5>
     <h6>+79116400900</h6>
   </div>
   <div class="contacts">
-    <a href=""><img src="img\i 16.png" alt="VK Сообщество" title="VK Сообщество"></a>
+    <a href=""><img src="img\logo_VK.png" alt="VK Сообщество" title="VK Сообщество"></a>
     <h5>VK Сообщество</h5>
     <h6></h6>
   </div>
@@ -238,12 +247,12 @@
     <h6>+79116400900</h6>
   </div>
   <div class="contacts">
-    <a href="tel:+79116400900"><img src="img\image 2.png" alt="Телефон" title="Позвонить"></a>
+    <a href="tel:+79116400900"><img src="img\phone_01.png" alt="Телефон" title="Позвонить"></a>
     <h5>Телефон</h5>
     <h6>+79116400900</h6>
   </div>
   <div class="contacts">
-    <img src="img\i 8.svg" alt="Адрес" title="Адрес">
+    <img src="img\logo_Telegram.svg" alt="Адрес" title="Адрес">
     <h5>Адрес</h5>
     <h6></h6>
   </div>
@@ -253,7 +262,7 @@
     <div class="footer-container">
         <!-- Логотип слева -->
         <div class="footer-logo">
-            <img src="img\Group 30.png" alt="Логотип"></a></li>
+            <img src="img/logo.png" alt="Логотип"></a></li>
             <p>&copy; 2026 В траве</p>
         </div>
 
@@ -283,11 +292,11 @@
             <div class="footer-col">
                 <h4>Соцсети</h4>
                 <ul>
-                    <li><a href="tel:+79116400900"><img src="img\image 2.png" alt="Телефон" title="Позвонить"></a></li>
-                    <li><a href="https://t.me/xderevo"><img src="img\i 8.svg" alt="Логотип Telegram" title="Написать в Telegram"></a></li>
-                    <li><a href=""><img src="img\i 16.png" alt="VK Сообщество" title="VK Сообщество"></a></li>
+                   <li><a href="tel:+79116400900"><img src="img\phone_01.png" alt="Телефон" title="Позвонить"></a></li>
+                    <li><a href="https://t.me/xderevo"><img src="img\logo_Telegram.svg" alt="Логотип Telegram" title="Написать в Telegram"></a></li>
+                    <li><a href=""><img src="img\logo_VK.png" alt="VK Сообщество" title="VK Сообщество"></a></li>
                     <li><a href="https://vk.com/away.php?to=https%3A%2F%2Fmax.ru%2Fu%2Ff9LHodD0cOLaLCBwVOrEhsqAn9IQgGBll5yeVk2AKQLl83vnsEdvJbJDutA&utf=1"><img src="img\Group 14.png" alt="Max" title="Написать в Max"></a></li>
-                    <li><a href="https://wa.me/79116400900"><img src="img\i 15.png" alt="WhatsApp" title="Написать в WhatsApp"></a></li>
+                    <li><a href="https://wa.me/79116400900"><img src="img\logo_WhatsApp.png" alt="WhatsApp" title="Написать в WhatsApp"></a></li>
                 </ul>
             </div>
         </div>

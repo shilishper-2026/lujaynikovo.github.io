@@ -128,12 +128,16 @@
 
 @media (orientation: portrait){
 
-.menu, .nado, .dropdown-content, main, .phone, .logoul, .contacts,.contacts2,.work1,.footer-col,.footer-logo,.footer-container,.footer-logo,header,#zagolovok1,main,.author,#zagolovok2,#zagolovok3,.text{
+.menu, .nado, .dropdown-content, main, .phone, .logoul, .contacts,.contacts2,.footer-col,.footer-logo,.footer-container,.footer-logo,header,#zagolovok1,main,.author,#zagolovok2,#zagolovok3,.text{
     list-style-type: none;
     margin: 0;
     padding: 0;
     font-size:4vw;
     font-family: sans-serif;
+}
+
+.work1{
+  margin-right: 10px;
 }
 
 .dropdown-content {
@@ -556,6 +560,7 @@ width: 20%;
     color: #fff;
     padding: 1% 0;
     font-family: Arial, sans-serif;
+    width: 100%;
 }
 
 .footer-container {
@@ -631,8 +636,9 @@ width: 20%;
 
 /* Прячем радиокнопки */
 input[name="slider"] { display: none; }
+input[name="slider_01"] { display: none; }
 
-.slide, .slides, .gallery-container, .arrow{
+.slide, .slide_01, .slides, .gallery-container, .arrow{
     z-index: 10;
 }
 
@@ -654,6 +660,19 @@ input[name="slider"] { display: none; }
   border-radius: 20%;
 }
 
+.slide_01 {
+  width: 100%;
+  display: none; /* Скрываем все слайды */
+  flex-direction: column;
+  align-items: center;  
+}
+
+.slide_01 img {
+    width: 30%;
+  height: auto;
+  border-radius: 20%;
+}
+
 .text {
   margin: 1%;
   background: rgba(133, 162, 28, 0.7);
@@ -670,6 +689,11 @@ margin-block-end: 1em;}
 #slide1:checked ~ .slides #content1,
 #slide2:checked ~ .slides #content2,
 #slide3:checked ~ .slides #content3 {
+  display: flex; /* Показываем активный слайд */
+}
+#slide1_01:checked ~ .slides #content1_01,
+#slide2_01:checked ~ .slides #content2_01,
+#slide3_01:checked ~ .slides #content3_01 {
   display: flex; /* Показываем активный слайд */
 }
 
@@ -737,12 +761,9 @@ label{
 #slide3:checked ~ #arrow4 { display: block; } /* На 2-й назад*/
 #slide3:checked ~ #arrow5 { display: block; } /* На 1-й вперёд*/
 
-
-
-#content2 img{
-    width: 25%; 
-}
-
-#textmobile{
-    width: 25%;
-}
+#slide1_01:checked ~ #arrow0_01 { display: block; } /* На последний */
+#slide1_01:checked ~ #arrow1_01 { display: block; } /* На 2-й вперёд*/
+#slide2_01:checked ~ #arrow2_01 { display: block; } /* На 1-й назад*/
+#slide2_01:checked ~ #arrow3_01 { display: block; } /* На 3-й вперёд*/
+#slide3_01:checked ~ #arrow4_01 { display: block; } /* На 2-й назад*/
+#slide3_01:checked ~ #arrow5_01 { display: block; } /* На 1-й вперёд*/
